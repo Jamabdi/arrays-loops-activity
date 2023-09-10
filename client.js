@@ -54,7 +54,20 @@ console.log('teal was found',tealCount, 'times');
  *    array and even numbers in the evenNumbers array.
  * 4. Output the original array, odd number array and even number array
  */
-
+let numbers = [1, 3, 2, 4, 6, 5, 7, 8, 10, 9, 12];
+console.log(numbers);
+let oddNumbers = [];
+let evenNumbers = [];
+for(i = 0; i < numbers.length; i++){
+    if(i % 2 !==0){
+        oddNumbers.push(numbers[i]);
+    }
+    else{
+        evenNumbers.push(numbers[i]);
+    }
+}
+console.log('Even Numbers in the array:', evenNumbers);
+console.log('Odd Numbers in the array:', oddNumbers);
 
 // Example output
 // 3, 7, 2, 8, 11, 4, 2
@@ -70,6 +83,18 @@ console.log('teal was found',tealCount, 'times');
  * 3. Write a loop that adds the opposite value to the toggled array
  * 4. Output both arrays
  */
+let booleans = [true, false, false, false, true];
+console.log('booleans array:', booleans);
+let toggled = [];
+for(i =0; i< booleans.length; i++){
+    if(booleans[i]===false){
+        toggled.push(true);
+    }
+    else{
+        toggled.push(false);
+    }
+}
+console.log('toggled array:', toggled);
 
 
 // Example output
