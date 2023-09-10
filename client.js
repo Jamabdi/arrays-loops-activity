@@ -6,6 +6,12 @@
  * 3. After the loop, log out the total number of
  *    hobbies
  */
+groupHobies =['chess', 'soccer', 'golf', 'basketball', 'cycling'];
+for(i = 0; i < groupHobies.length; i++){
+console.log(groupHobies[i]);
+}
+console.log('total hobbies:', groupHobies.length);
+
 
 
 // Example output
@@ -24,7 +30,15 @@
  *    is in the array
  * 4. Output the array and number of times teal was found
  */
-
+let colors = ['teal','red', 'blue', 'yellow', 'teal', 'pink', 'teal'];
+console.log(colors);
+tealCount = 0;
+for(i =0; i < colors.length; i++){
+    if(colors[i]=== 'teal'){
+        tealCount++
+    }
+}
+console.log('teal was found',tealCount, 'times');
 
 // Example output
 // green, red, teal, orange, teal
